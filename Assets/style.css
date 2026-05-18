@@ -172,10 +172,15 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, rgba(86, 158, 194, 0.9) 100%);
+    /*background: linear-gradient(135deg, var(--primary-blue) 0%, rgba(86, 158, 194, 0.9) 100%);*/
+
+    background-image: url('images/hero.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: 100%; 
+    max-width: 100%;
     color: var(--white);
     padding: 6rem 3rem;
-    min-height: 600px;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -209,7 +214,7 @@ nav {
 
 .hero-text h1 {
     font-family: "Raleway", sans-serif;
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.2;
@@ -286,13 +291,25 @@ section {
 /* What Sets Us Apart */
 .what-sets-apart {
     background-color: var(--light-gray);
+    background-image: url('images/blue-hillls-team-transparent.png');
+    background-position: bottom left;
+    background-repeat: no-repeat; 
+    max-width: 100%;
+    background-size: 770px;
+    background-attachment: scroll;
+    padding-top: 7rem;
+    padding-right:0;
 }
 
 .what-sets-apart-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 90%;
+    padding-bottom: 50px;
+}
+
+.what-sets-apart-text {
+    max-width: 550px;
 }
 
 .what-sets-apart-text h3 {
@@ -308,18 +325,7 @@ section {
     line-height: 1.8;
     color: #555;
 }
-
-.what-sets-apart-image {
-    display: flex;
-    justify-content: center;
-}
-
-.what-sets-apart-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
+ 
 
 /* Meet Doctor */
 .meet-doctor {
@@ -327,7 +333,9 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    background-color: var(--white);
+    background-color: var(--dark-text);
+    max-width: 100%;
+    padding: 5rem 5rem;
 }
 
 .doctor-image {
@@ -345,7 +353,7 @@ section {
 .doctor-content h2 {
     font-family: "Raleway", sans-serif;
     font-size: 2.2rem;
-    color: var(--dark-text);
+    color: var(--light-gray);
 }
 
 .doctor-content h3 {
@@ -363,11 +371,13 @@ section {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--light-gray);
 }
 
 /* Meet Team */
 .meet-team {
+    max-width: 100%;
+    padding: 5rem 5rem;
     background-color: var(--light-gray);
 }
 

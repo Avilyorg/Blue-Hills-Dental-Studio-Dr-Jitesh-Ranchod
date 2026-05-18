@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="Assets/style.css">
 </head>
 
@@ -80,37 +81,26 @@
                     Dental Studio offers dental care designed to help you feel more comfortable throughout your visit.
                 </p>
                 <a href="#contact" class="hero-button">Book an Appointment</a>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.freepik.com/free-photo/beautiful-young-woman-with-perfect-smile_23-2149260342.jpg?t=st=1715596800~exp=1715600400~hmac=5e8e6c3c3e3e3c3e3c3e3c3e3c3e3c3e"
-                    alt="Beautiful smile"
-                    onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23e0e0e0%22 width=%22400%22 height=%22300%22/%3E%3C/svg%3E'">
-            </div>
+            </div> 
         </div>
     </section>
 
     <!-- What Sets Us Apart -->
     <section class="what-sets-apart" id="about">
-        <div class="what-sets-apart-content">
+        <div class="what-sets-apart-content"> 
             <div class="what-sets-apart-text">
-                <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem;">What Sets Blue Hills<br> Dental Studio Apart?</h2>
+                <h2 style="font-size: 2.7rem; margin-bottom: 1.5rem; line-height: 1.4;">What Sets Blue Hills<br> Dental Studio Apart?</h2>
                 <p>At Blue Hills Dental Studio, dental visits feel straightforward and manageable. Patients are guided
                     through treatment so they know what to expect during their appointment.</p>
-                <p>The practice provides dental care for patients of all ages. Treatment is available for tooth pain and
+                <p style="margin-bottom:0;">The practice provides dental care for patients of all ages. Treatment is available for tooth pain and
                     damaged teeth. Care is also available for patients who feel anxious about dental procedures.
                 </p>
-            </div>
-            <div class="what-sets-apart-image">
-                <img src="Assets\images\welcme.jpg" alt="Dentist consultation">
             </div>
         </div>
     </section>
 
     <!-- Meet Dr Jitesh -->
     <section class="meet-doctor" id="doctor">
-        <div class="doctor-image">
-            <img src="Assets\images\dr-ranchod.jpg">
-        </div>
         <div class="doctor-content">
             <h2>Meet Dr Jitesh Ranchod</h2>
             <h3>Principal Dentist and Owner</h3>
@@ -121,6 +111,9 @@
             <div style="margin-top: 2rem;">
                 <a href="about" class="read-more-btn">Find out more</a>
             </div>
+        </div>
+        <div class="doctor-image">
+            <img src="Assets\images\dr-ranchod.jpg">
         </div>
     </section>
 
@@ -306,37 +299,36 @@
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-section">
-                <img src="Assets/logo.png" alt="Blue Hills Dental Studio Logo">
-                <p>Blue Hills Dental Studio offers dental care in Midrand with a focus on helping patients feel more
-                    comfortable and informed throughout their visit.</p>
+                <img src="Assets/logo.png" alt="Blue Hills Dental Studio Logo" style="width:60%">
+                <p>Blue Hills Dental Studio offers dental care in Midrand with a focus on helping patients feel more comfortable and informed throughout their visit.</p>
             </div>
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span>📍</span>
+                        <i class="fas fa-map-marker-alt"></i>
                         <p>Shop 17, Blue Hills Shopping Centre, Cnr Olifantsfontein Road and African View Drive, Blue
                             Hills, Midrand, 1685</p>
                     </div>
                     <div class="contact-item">
-                        <span>✉️</span>
+                        <i class="fas fa-envelope"></i>
                         <a href="mailto:info@bluehillsdental.co.za">info@bluehillsdental.co.za</a>
                     </div>
                     <div class="contact-item">
-                        <span>📞</span>
-                        <a href="tel:0113185016">011 318 5016</a>
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+27113185016">011 318 5016</a> | <a href="tel:+27766990014">076 699 0014</a>
                     </div>
                 </div>
             </div>
             <div class="footer-section">
                 <h3>Operating Hours</h3>
-                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 1:00 PM</p>
                 <p>Sunday: Closed</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Blue Hills Dental Studio. All rights reserved. | Crafted with care in Midrand</p>
+            <p>&copy; <span id="year">2024</span> Blue Hills Dental Studio. All rights reserved.</p>
         </div>
     </footer>
 
